@@ -5,7 +5,6 @@ import android.media.AudioManager
 import android.os.Build
 import android.os.Handler
 import android.os.Looper
-import androidx.annotation.RequiresApi
 import androidx.annotation.VisibleForTesting
 import com.twilio.audioswitch.AbstractAudioSwitch.State.*
 import com.twilio.audioswitch.AudioDevice.*
