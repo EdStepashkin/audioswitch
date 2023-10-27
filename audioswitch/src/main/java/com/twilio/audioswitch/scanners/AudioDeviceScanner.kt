@@ -9,7 +9,7 @@ import androidx.annotation.RequiresApi
 import androidx.annotation.VisibleForTesting
 import com.twilio.audioswitch.AudioDevice
 
-@RequiresApi(Build.VERSION_CODES.M)
+
 internal class AudioDeviceScanner(
     private val audioManager: AudioManager,
     private val handler: Handler,
