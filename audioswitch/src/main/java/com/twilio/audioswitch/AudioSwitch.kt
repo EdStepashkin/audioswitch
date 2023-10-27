@@ -26,7 +26,6 @@ import java.util.*
  * @property selectedAudioDevice Retrieves the selected [AudioDevice] from [AudioSwitch.selectDevice].
  * @property availableAudioDevices Retrieves the current list of available [AudioDevice]s.
  **/
-@RequiresApi(Build.VERSION_CODES.M)
 class AudioSwitch : AbstractAudioSwitch {
     /**
      * Constructs a new AudioSwitch instance.
