@@ -1,11 +1,11 @@
 package com.twilio.audioswitch.scanners
 
+import android.annotation.SuppressLint
 import android.media.AudioDeviceCallback
 import android.media.AudioDeviceInfo
 import android.media.AudioManager
 import android.os.Build
 import android.os.Handler
-import androidx.annotation.RequiresApi
 import com.twilio.audioswitch.AudioDevice
 
 
@@ -75,7 +75,8 @@ internal class AudioDeviceScanner(
             }
 }
 
-@RequiresApi(Build.VERSION_CODES.M)
+
+@SuppressLint("NewApi")
 class AudioDeviceCallbackWrapper : AudioDeviceCallback() {
     internal var listener: Scanner.Listener? = null
     override fun onAudioDevicesAdded(addedDevices: Array<out AudioDeviceInfo>?) {
